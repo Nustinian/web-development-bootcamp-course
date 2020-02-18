@@ -1,0 +1,40 @@
+body {
+    background-color: #f38181;
+    text-align: center;
+}
+table {
+    margin: 0 auto;
+    
+}
+h1 {
+    color: #fce38a;
+}
+h3 {
+    color: #eaffd0;
+}
+hr {
+    border-style: dotted none none;
+    border-width: 10px;
+    width: 5%;
+    align-content: start;
+    border-color: #eaffd0;
+}
+th {
+    font-size: 20px;
+}
+table {
+    border-collapse: collapse;
+}
+.skillstable {
+    border: 0 solid;
+    border-width: 2px 0;   
+}
+.skill {
+    color: #95e1d3;
+}
+.rating {
+    text-align: left;
+}
+.skillgroup {
+    color: #fce38a;
+}
