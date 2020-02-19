@@ -1,0 +1,32 @@
+.container {
+    padding-top: 75px;
+}
+.self-introduction {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;    
+}
+.cloud1 {
+    position: absolute;
+    left: 300px;
+    bottom: 150px;
+}
+.cloud2 {
+    position: absolute;
+    right: 300px;
+    top: 150px;
+}
+
+body {
+    margin: 0px;
+    text-align: center;
+    background-color: #e4f9f5;
+    font-family: 'Merriweather', serif;
+}
+h1 {
+    font-family: 'Sacramento', cursive;
+}
+
+h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
