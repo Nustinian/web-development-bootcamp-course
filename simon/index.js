@@ -28,7 +28,7 @@ function flashButton(button) {
     $("#" + button).addClass("pressed");
     setTimeout(function () {
         $("#" + button).removeClass("pressed");
-    }, 50);
+    }, 150);
 }
 
 function startGame() {
