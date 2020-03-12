@@ -32,9 +32,9 @@ function flashButton(button) {
 }
 
 function startGame() {
-    $("h1").text("Level 1");
     gameActive = true;
     nextLevel();
+    $("h1").text("Good luck!");
 }
 
 function gameOver() {
@@ -49,6 +49,7 @@ function gameOver() {
     gameActive = false;
     $("h1").text("Game over!");
     $("h1").after(`<p class='restart-text'>You made it to level ${finalLevel}.<br><br>Press any key to play again.</p>`)
+    $(".start-button").fadeIn();
 }
 
 $(document).on("keypress", function () {
@@ -58,7 +59,14 @@ $(document).on("keypress", function () {
     }
 })
 
-$(".btn").on("click", function () {
+$(".start-button").on("click", function() {
+    $(".restart-text").remove();
+    $(".start-button").fadeOut();
+    startGame();
+})
+
+
+$(".game-button").on("click", function () {
     flashButton(this.id);
     playSound(this.id);
     if (gameActive) {

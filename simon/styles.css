@@ -15,7 +15,6 @@ body {
   font-size: 1.5rem;
   margin:  5%;
   color: #FEF2BF;
-
 }
 
 .container {
@@ -55,7 +54,24 @@ body {
   background-color: yellow;
 }
 
+.start-button {
+  height: 60px;
+  width: 100px;
+  background-color: purple;
+  text-align: center;
+  line-height: 60px;
+  font-family: 'Press Start 2P', cursive;
+  color: #FEF2BF;
+  visibility: hidden;
+}
+
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+@media (max-width: 1120px) {
+  .start-button {
+    visibility: visible;
+  }
 }
